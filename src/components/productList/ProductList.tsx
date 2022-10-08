@@ -22,7 +22,7 @@ const ProductList = () => {
             queryId
         }
 
-        fetch('http://46.101.102.231:8000/web-data', {
+        fetch('https://tg-web-app-ts-react-shop.pages.dev/web-data', {
             method: "POST",
             headers: {
                 'Content-Type': "application/json",
