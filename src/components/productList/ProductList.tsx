@@ -22,7 +22,7 @@ const ProductList = () => {
             queryId
         }
 
-        fetch('https://tg-shop.simbowear.com/web-data', {
+        fetch('http://46.101.210.97:8080/web-data', {
             method: "POST",
             headers: {
                 'Content-Type': "application/json",
