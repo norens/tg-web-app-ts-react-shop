@@ -22,7 +22,7 @@ const ProductList = () => {
             queryId
         }
 
-        fetch('https://tg-web-app-ts-react-shop.pages.dev/web-data', {
+        fetch('https://tg-shop.simbowear.com/web-data', {
             method: "POST",
             headers: {
                 'Content-Type': "application/json",
