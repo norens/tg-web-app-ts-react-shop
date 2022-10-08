@@ -15,8 +15,8 @@ const ProductList = () => {
     const [addedItems, setAddedItems] = useState<IProduct[]>([])
     const {tg, queryId} = useTelegram()
 
-    const onSendData = useCallback(()=>{
-        const data ={
+    const onSendData = useCallback(() => {
+        const data = {
             products: addedItems,
             totalPrice: getTotalPrice(addedItems),
             queryId
@@ -59,9 +59,11 @@ const ProductList = () => {
     }
     return (
         <div>
-            {products.map(item => (
-                <ProductItem product={item} onAdd={onAdd} key={item.id}/>
-            ))}
+            <div className={'list'}>
+                {products.map(item => (
+                    <ProductItem product={item} onAdd={onAdd} key={item.id}/>
+                ))}
+            </div>
             <button onClick={onSendData}>lol</button>
         </div>
     )
