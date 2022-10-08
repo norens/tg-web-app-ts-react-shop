@@ -22,7 +22,7 @@ const ProductList = () => {
             queryId
         }
 
-        fetch('http://tg-shop.simbowear.com:8080/web-data', {
+        fetch('http://tg-shop.simbowear.com/web-data', {
             method: "POST",
             headers: {
                 'Content-Type': "application/json",
@@ -62,6 +62,7 @@ const ProductList = () => {
             {products.map(item => (
                 <ProductItem product={item} onAdd={onAdd}/>
             ))}
+            <button onClick={onSendData}>lol</button>
         </div>
     )
 }
