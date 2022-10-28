@@ -11,5 +11,5 @@ export const products = [
     {id: 3, title: 'Iphone', description: 'Description', price: 3.99, img: iphone},
     {id: 4, title: 'IMacMini', description: 'Description', price: 7.99, img: mac_mini},
     {id: 5, title: 'IPencil', description: 'Description', price: 3.99, img: pencil},
-    {id: 5, title: 'IWatch', description: 'Description', price: 3.99, img: smartwatch},
+    {id: 6, title: 'IWatch', description: 'Description', price: 3.99, img: smartwatch},
 ]
