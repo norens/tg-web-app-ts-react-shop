@@ -58,13 +58,12 @@ const ProductList = () => {
         }
     }
     return (
-        <div>
-            <div className={'list'}>
+        <div className={'container'}>
+            <div className={'inner'}>
                 {products.map(item => (
                     <ProductItem product={item} onAdd={onAdd} key={item.id}/>
                 ))}
             </div>
-            <button onClick={onSendData}>lol</button>
         </div>
     )
 }

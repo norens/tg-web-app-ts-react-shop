@@ -4,7 +4,13 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    src: local('LucidaGrande-Bold'), url('https://nomail.com.ua/files/woff/4dacabda65930685b68591f097311829.woff') format('woff');
+    src: local('LucidaGrande'), url('https://nomail.com.ua/files/woff/e84c9b5584917e71ad22e0aaa55f28a1.woff') format('woff');
+}
+
 body {
-    background: var(--tg-theme-bg-color);
     color: var(--tg-theme-text-color);
+    background: var(--tg-theme-bg-color);
+    font-family: 'LucidaGrande', serif;
 }

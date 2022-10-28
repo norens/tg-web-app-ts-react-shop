@@ -8,15 +8,17 @@ const ProductItem = ({product, onAdd}: { product: IProduct, onAdd: (e: IProduct)
         onAdd(product)
     }
     return (
-        <div className={'product'}>
-            <div className={'img'}/>
-            <div className={'tittle'}>{product.title}</div>
-            <div className={'description'}>{product.description}</div>
-            <div className={'price'}>
-                <span>Price: <b>{product.price}</b></span>
+        <div className={'item'}>
+            <img src={product.img} className={'img'} alt={product.title}/>
+            <div className={'name'}>
+                {product.title}
+                <span> · </span>
+                <span className={'price'}>
+                    ${product.price}
+                </span>
             </div>
-            <Button className={'add-btn'} onClick={onAddHandler}>
-                add to cart
+            <Button className={'btn'} onClick={onAddHandler}>
+                add
             </Button>
 
         </div>

@@ -1,4 +1,10 @@
-.list {
-    display: flex;
-    flex-wrap: wrap;
+.container {
+    max-width: 390px;
+}
+
+.inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 22px;
+    grid-template-rows: 200px 200px 200px;
 }
